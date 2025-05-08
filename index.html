@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+    <style>
+        body{
+        font-family: "Cal Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+        h1{
+            text-align: center;
+        }
+        .main{
+            display:flex;
+            justify-content: center;
+            position:relative;
+            top:250px;
+        }
+        .container{
+            background-color: black;
+            color:white;
+            width: 40%;
+            height:230px;
+            padding:20px;
+            border-radius:20px;
+            border:3px solid white;
+         }
+
+         
+        #inputbox{
+            border:none;
+            background-color:white;
+            border: 2px solid #ccc;
+            margin-left:200px;
+            
+            
+        }
+        #inputbox:focus{
+            outline:none;
+        }
+       
+        
+      button{
+            border:none;
+            outline:none;
+            background-color: #ffff;
+            color:black;
+            width:60px;
+            height:30px;
+            font-family: "Cal Sans", sans-serif;
+            margin-left: 250px;
+        }
+        p{
+            text-align:center;
+            margin-right:50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+    <h1>Generate a number from 1 to 10</h1>
+    <input type="text" id="inputbox"><br><br>
+    <button onclick="checknumber()">Click</button>
+    <p id="result">Guess the number: correct or wrong 🔢</p>
+    <p id="guesscount">Available guesses: ❤️❤️❤️</p>
+    <script src="script.js"></script>
+</div>
+</div>
